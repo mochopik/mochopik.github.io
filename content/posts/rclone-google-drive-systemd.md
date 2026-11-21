@@ -84,7 +84,11 @@ Kalau status-nya `active (running)` dan isi Drive muncul, selesai. Restart lapto
 
 ## Membuat Client ID sendiri
 
-Secara default rclone memakai **shared client ID** yang dipakai bareng semua pengguna rclone. Dukungannya akan berakhir, jadi lebih aman membuat Client ID sendiri (panduan resminya ada di [dokumentasi rclone](https://rclone.org/drive/#making-your-own-client-id)).
+Secara default rclone memakai **shared client ID** yang dipakai bareng semua pengguna rclone. Menurut [dokumentasi resmi rclone](https://rclone.org/drive/#making-your-own-client-id):
+
+> "This shared client_id is being retired and will stop working during 2026."
+
+Jadi membuat Client ID sendiri sekarang **wajib**, bukan sekadar disarankan. Bonusnya, kamu tidak lagi berbagi rate limit (kuota request per detik dari Google) dengan semua pengguna rclone lain.
 
 Langkah yang sering bikin macet adalah tombol **PUBLISH APP** yang abu-abu. Google sekarang mewajibkan **homepage** dan **privacy policy** sebelum app bisa dipublish, bahkan untuk app pribadi.
 
