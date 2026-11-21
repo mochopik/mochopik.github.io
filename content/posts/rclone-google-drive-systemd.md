@@ -60,6 +60,7 @@ Beberapa catatan:
 - `%h` = home folder user, jadi path-nya `~/Clouds/Drive`.
 - `Type=notify` membuat systemd menunggu sampai rclone benar-benar selesai mount.
 - `"Google Drive:"` adalah **nama remote** di config rclone, bukan nama folder.
+- `network-online.target` di user service praktis tidak berpengaruh (target itu milik system manager). Kalau rclone jalan sebelum jaringan siap, yang menyelamatkan adalah `Restart=on-failure` + `RestartSec=10`: service akan mencoba lagi sampai berhasil.
 
 ## Enable & cek
 
