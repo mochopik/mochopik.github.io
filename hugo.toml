@@ -1,0 +1,12 @@
+baseURL = "https://mochopik.github.io/"
+languageCode = "id"
+title = "mochopik"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "auto"
+  ShowCodeCopyButtons = true
+  ShowReadingTime = true
+  ShowToc = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
