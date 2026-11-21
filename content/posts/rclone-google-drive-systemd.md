@@ -157,6 +157,7 @@ journalctl --user -u rclone-gdrive -f
 - **`invalid_grant`**: token tidak valid lagi. Jalankan `rclone config reconnect "Google Drive:"` lalu `systemctl --user restart rclone-gdrive`.
 - **Log `vfs cache: removed cache file`**: normal. Yang dihapus hanya salinan cache lokal yang lama, bukan file di Drive.
 - **Sebelum shutdown**, pastikan upload selesai. Dengan `--vfs-cache-mode full`, file disimpan dulu di cache lalu di-upload beberapa detik kemudian. Cari baris `upload succeeded` di log.
+- **Kalau terlanjur shutdown sebelum upload selesai**: tidak hilang. File-nya tetap tersimpan di cache lokal (`~/.cache/rclone/vfs`), dan rclone akan melanjutkan upload-nya otomatis saat service jalan lagi setelah login berikutnya.
 
 Perintah lain yang berguna:
 
