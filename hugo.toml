@@ -1,4 +1,5 @@
 baseURL = "https://mochopik.github.io/"
+defaultContentLanguage = "id"
 locale = "id"
 title = "mochopik"
 theme = "PaperMod"
