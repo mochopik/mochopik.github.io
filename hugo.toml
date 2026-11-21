@@ -1,5 +1,5 @@
 baseURL = "https://mochopik.github.io/"
-languageCode = "id"
+locale = "id"
 title = "mochopik"
 theme = "PaperMod"
 
@@ -10,3 +10,23 @@ theme = "PaperMod"
   ShowToc = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 2
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 3
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
